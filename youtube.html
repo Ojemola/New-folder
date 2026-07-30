@@ -1,82 +1,416 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign-up page</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        margin: 0;
-        background-color: #f4f7fb;
-      }
-
-      .form-card {
-        background: #ffffff;
-        padding: 24px;
-        border-radius: 16px;
-        box-shadow: 0 16px 40px rgba(35, 45, 55, 0.12);
-        width: min(100%, 380px);
-        box-sizing: border-box;
-      }
-
-      .form-card h1 {
-        margin: 0 0 20px;
-        font-size: 22px;
-        color: #17212b;
-      }
-
-      .field {
-        width: 100%;
-        padding: 12px 14px;
-        margin-bottom: 14px;
-        border: 1px solid rgba(209, 219, 219, 0.9);
-        border-radius: 10px;
-        font-size: 15px;
-        color: #0c1d1b;
-        box-sizing: border-box;
-      }
-
-      .button-row {
-        display: flex;
-        justify-content: center;
-      }
-
-      .sign {
-        background-color: #2563eb;
-        color: white;
-        border: none;
-        border-radius: 10px;
-        padding: 14px 32px;
-        font-size: 16px;
-        cursor: pointer;
-        transition: opacity 0.2s ease, box-shadow 0.2s ease;
-      }
-
-      .sign:hover {
-        opacity: 0.85;
-        box-shadow: 0 10px 24px rgba(37, 99, 235, 0.18);
-      }
-
-      .sign:active {
-        opacity: 0.65;
-      }
-    </style>
+    <title>Youtube.com</title>
   </head>
+  <style>
+    .thumbnail-picture {
+      width: 300px;
+      cursor: pointer;
+    }
+    .search-box {
+      display: block;
+    }
+    .contain-all1 {
+      width: 300px;
+      display: inline-block;
+    }
+    .contail-text {
+      width: 300px;
+      display: grid;
+      grid-template-columns: 50px 1fr;
+      margin-bottom: 12px;
+    
+    }
+    .text-contain {
+      width: 250px;
+      font-size: 14px;
+      font-weight: bold;
+      display: flow-root;
+      margin-top: 10px;
+      line-height: 20px;
+      font-family: Roboto, Arial, sans-serif;
+      display: block;
+      cursor: pointer;
+    }
+    .channel-div {
+      width: 50px;
+      vertical-align: top;
+      
+    }
+    .texts-div {
+      width: 0px;
+  
+    }
+    .channel-picture {
+      width: 40px;
+      border-radius: 50px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+    .thumnain-2 {
+      width: 300px;
+      vertical-align: top;
+      margin-left: 10px;
+    }
+    .displa-2 {
+      display: inline-block;
+    }
+    .center-a {
+      width: 300px;
+      cursor: pointer;
+    }
+    .center-b {
+      display: inline-block;
+      width: 300px;
+      vertical-align: top;
+      margin-left: 12px;
+    }
+    .center-e {
+      width: 40px;
+      border-radius: 50px;
+      margin-top: 10px;
+      cursor: pointer;
+      
+    }
+    .center-d {
+      width: 50px;
+      display: inline-block;
+      vertical-align: top;
+      
+    }
+    .center-f {
+      width: 250px;
+      display: inline-block;
+    }
+    .center-g {
+      font-weight: bold;
+      font-size: 14px;
+      margin-top: 10px;
+      font-family: Roboto, Arial, sans-serif;
+      text-decoration-style: solid;
+      color: rgb(0, 0 ,0);
+      cursor: pointer;
+    }
+    .middle-a {
+      color: rgb(96, 96, 96);
+      font-size: 12px;
+      text-decoration: rgb(96, 96, 96);
+      text-decoration-style: solid;
+      font-family: Roboto, Arial, sans-serif;
+      margin-bottom: 0px;
+      width: 200px;
+      cursor: pointer;
+    }
+    .center-c {
+      display: grid;
+      grid-template-columns: 50px 1fr;
+    
+    }
+    .middle-b {
+    font-size: 12px;
+    color: rgb(96, 96, 96);
+    font-family: Roboto, Arial, sans-serif;
+    margin-top: 4px;
+    width: 200px;
+    cursor: pointer;
+    }
+    .center-h {
+      color: rgb(96, 96, 96);
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 12px;
+      margin-bottom: 0px;
+      cursor: pointer;
+    }
+    .center-i {
+     font-family: Roboto, Arial, sans-serif; 
+     font-size: 12px;
+     color: rgb(96, 96, 96);
+     margin-top: 6px;
+     cursor: pointer;
+    }
+    .pol-pol {
+      display: inline-block;
+      vertical-align: top;
+      margin-left: 10px;
+    }
+    .xox-xox {
+      cursor: pointer;
+      width: 300px;
+    }
+    .jum-jum {
+      font-size: 14px;
+      width: 292px;
+      line-height: 20px;
+      font-family:  Roboto, Arial, sans-ser;
+      font-weight: 545;
+      margin-top: 10px;
+      margin-left: px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .and-and {
+     
+    }
+    .quq-quq {
+      display: grid;
+      grid-template-columns: 50px 1fr;
+    }
+    .for-for {
+       vertical-align: top;
+       width: 250px;
+       margin-left: 0px;
+    }
+    .huf-huf {
+      width: 40px;
+      border-radius: 50px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+    .men-men {
+     font-family:  Roboto, Arial, sans-ser;
+     font-size: 12px;
+     color: rgb(96, 96, 96);
+     margin-bottom: 0px;
+     cursor: pointer;
+     margin-left: px;
+    }
+    .man-man {
+     font-family:  Roboto, Arial, sans-ser;
+     font-size: 12px;
+      color: rgb(96, 96, 96);
+      margin-top: 6px;
+      cursor: pointer;
+      margin-left: px
+    }
+    .channel-4 {
+      width: 300px;
+      cursor: pointer;
+      
+    }
+    .four-width {
+      display: inline-block;
+      width: 300px;
+      vertical-align: top;
+      margin-left: 12px;
+      
+    
+    }
+    .fourth-text {
+      width: 250px;
+      margin-top: 10px;
+      font-weight: bold;
+      font-size: 14px;
+      box-sizing: border-box;
+      font-family:  Roboto, Arial, sans-serif;
+      color: rgb(0, 0 ,0);
+      cursor: pointer;
+      margin-bottom: 20px;
+
+    }
+    .dip-la {
+     
+      width: 50px;
+      vertical-align: top;
+      
+      cursor: pointer;
+      
+    }
+    .dos-pol {
+      
+      width: 250px;
+      margin-left: px;
+    
+    }
+    .thumb-5 {
+      width: 40px;
+      border-radius: 70px;
+      margin-top: 10px;
+    }
+    .las-las {
+     display: grid;
+     grid-template-columns: 50px 1fr;
+     
+    }
+    .end-1 {
+     font-size: 12px;
+     font-family:  Roboto, Arial, sans-serif;
+     color: rgb(96, 96, 96);
+     cursor: pointer;
+     margin-bottom: 0px;
+    }
+    .end-2 {
+     font-size: 12px;
+     font-family:  Roboto, Arial, sans-serif;
+     color: rgb(96, 96, 96);
+     cursor: pointer;
+     margin-top: 6px;
+    }
+    .thumbnail-5 {
+      width: 300px;
+    }
+    .all-5 {
+      width: 300px;
+      cursor: pointer;
+      margin-top: 25px;
+    }
+    .channel-5 {
+    
+     width: 50px;
+     vertical-align: top;
+     cursor: pointer;
+    }
+    .text-5 {
+     width: 250px;
+     cursor: pointer;
+     margin-bottom: px;
+    }
+    .picture-5 {
+      width: 40px;
+      border-radius: 50px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    .text5-contain {
+      width: 255px;
+      font-size: 14px;
+      margin-left: px;
+      margin-top: 12px;
+      font-weight: bold;
+      font-family: Roboto, Arial, sans-serif;
+      cursor: pointer;
+      line-height: 20px;
+    }
+    .cs-doj {
+     font-size: 12px;
+     color: rgb(96, 96, 96);
+     margin-bottom: 0px;
+     margin-top: 8px;
+    }
+    .years-ago {
+     font-size: 12px;
+     color: rgb(96, 96, 96);
+     margin-top: 6px;
+    }
+    .grid-5 {
+      display: grid;
+      grid-template-columns: 50px 1fr;
+    }
+  </style>
   <body>
-    <form class="form-card" action="#" method="post">
-      <h1>Create an account</h1>
-      <input class="field" type="text" name="first_name" placeholder="First name" required>
-      <input class="field" type="text" name="last_name" placeholder="Last name" required>
-      <input class="field" type="email" name="email" placeholder="Email" required>
-      <input class="field" type="password" name="password" placeholder="Enter your password" required>
-      <div class="button-row">
-        <button class="sign" type="submit">Sign up</button>
+    <input class="search-box" type="search" placeholder="Search">
+    <div class="contain-all1">
+      <div class="1st-text">
+    <img class="thumbnail-picture" src="Thumbnails/thumbnail-1.webp">
       </div>
-    </form>
+        
+      <diV class="contail-text">
+        <div class="channel-div">
+       <img class="channel-picture" src="Thumbnails/channel-1.jpeg">
+        </div>
+        <div>
+        <div class="texts-div">
+       <p class="text-contain">
+Talking Tech and AI with Google CEO Sundar Pichai!
+    </p>
+    <p class="middle-a">
+Marques Brownlee
+    </p>
+    <p class="middle-b">
+3.4M views · 6 months ago
+    </p>
+    </div>
+        </div>
+      </diV>
+    </div>
+    <div class="center-b">
+      <div>
+    <img class="center-a" src="Thumbnails/thumbnail-2.webp">
+      </div>
+      <diV class="center-c">
+        <div class="center-d">
+       <img class="center-e" src="Thumbnails/channel-2.jpeg">
+        </div>
+        <div class=" center-f">
+       <p class="center-g"> 
+Try Not To Laugh Challenge #9
+    </p>
+    <p class="center-h">
+Markiplier
+    </p>
+    <p class="center-i">
+    19M views · 4 years ago
+    </p>
+        </div>
+      </diV>
+    </div>
+    <div class="pol-pol">
+    <div>
+   <img class="xox-xox" src="Thumbnails/thumbnail-3 (1).webp">
+    </div>
+   
+    <div class="quq-quq">
+      <div class="and-and">
+    <img class="huf-huf" src="Thumbnails/channel-3.jpeg">
+      </div>
+      <div class="for-for">
+     <p class="jum-jum">
+Crazy Tik Toks Taken Moments Before DISASTER 
+    </p>
+    <p class="men-men">
+   SSSniperWolf
+    </p>
+    <p class="man-man">
+   12M views · 1 year ago
+   </p>
+      </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="four-width">
+      <div>
+        <img class="channel-4" src="Thumbnails/thumbnail-4.webp"> 
+      </div>
+      
+      <div class="las-las">
+        <div class="dip-la">
+         <img class="thumb-5" src="Thumbnails/channel-4.jpeg"> 
+        </div>
+        <div class="dos-pol">
+        <p class="fourth-text">
+      The Simplest Math Problem No One Can Solve - Collatz Conjecture
+     </p>
+     <p class="end-1">
+      Veritasium
+     </p>
+     <p class="end-2">
+      18M views · 4 months ago
+     </p>
+        </div>
+      </div>
+    </div>
+ 
+    <div class="all-5">
+      <div>
+     <img class="thumbnail-5" src="Thumbnails/thumbnail-5.webp">
+      </div>
+      <div class="grid-5">
+        <div class="channel-5">
+        <img class="picture-5" src="Thumbnails/channel-5.jpeg">
+        </div>
+        <div class="text-5">
+  <p class="text5-contain">
+Kadane's Algorithm to Maximum Sum Subarray Problem
+      </p>
+      <p class="cs-doj"> 
+      CS Dojo
+      </p>
+      <p class="years-ago">
+      519K views · 5 years ago
+      </p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
