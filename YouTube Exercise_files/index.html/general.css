@@ -3,29 +3,41 @@
         background-color: rgba(253, 253, 253, 0.534);
         padding-right: 20px;
         padding-left: 100px;
-        padding-bottom: 1000px;
       }
 
        .grid-example {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-columns: 1fr 1fr 1fr;
         column-gap: 16px;
         row-gap: 20px;
         padding-top: 95px;
 
       }
 
-      @media (max-width: 1000px) {
+       @media (max-width: 950px) {
         .grid-example {
           grid-template-columns: 1fr 1fr;
         }
-      }
+       }
 
-      @media (max-width: 650px) {
-         .grid-example {
+       @media (max-width: 901px) and (min-width: 1264px) {
+        .grid-example {
+          grid-template-columns: 1fr 1fr 1fr ;
+        }
+       }
+
+       @media (min-width: 1359px) {
+        .grid-example {
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+       }
+
+       @media (max-width: 650px) {
+        .grid-example {
           grid-template-columns: 1fr;
-         }
-      }
+        }
+       }
+
 
       .apple {
         width: 100%;
