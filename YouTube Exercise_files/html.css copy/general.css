@@ -1,12 +1,12 @@
- body {
-  margin: 0;
-  background-color: rgba(253, 253, 253, 0.534);
-  padding-right: 20px;
-  padding-left: 100px;
-  padding-bottom: 1000px;
- }
+       body {
+        margin: 0;
+        background-color: rgba(253, 253, 253, 0.534);
+        padding-right: 20px;
+        padding-left: 100px;
+        padding-bottom: 1000px;
+      }
 
- .grid-example {
+       .grid-example {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr ;
         column-gap: 16px;
@@ -15,10 +15,16 @@
 
       }
 
-      @media (max-width: 960px) {
+      @media (max-width: 1000px) {
         .grid-example {
           grid-template-columns: 1fr 1fr;
         }
+      }
+
+      @media (max-width: 650px) {
+         .grid-example {
+          grid-template-columns: 1fr;
+         }
       }
 
       .apple {
@@ -59,7 +65,7 @@
       }
       
       .text-3 {
-          color: rgb(96 96 96);
+        color: rgb(96 96 96);
         font-family: Roboto, Arial;
         font-size: 13px;
         margin-top: 6px;
@@ -114,7 +120,7 @@
       }
 
       .text-6 {
-         color: rgb(96 96 96);
+        color: rgb(96 96 96);
         font-size: 13px;
         font-family: Roboto, Arial;
         margin-top: 6px;
@@ -279,7 +285,7 @@
       }
 
       .text-15 {
-         color: rgb(96 96 96);
+        color: rgb(96 96 96);
         font-family: Roboto, Arial;
         font-size: 13px;
         margin-top: 6px;
@@ -384,7 +390,7 @@
       }
 
       .text-21 {
-         color: rgb(96 96 96);
+        color: rgb(96 96 96);
         font-size: 13px;
         font-family: Roboto, Arial;
         margin-top: 6px;
@@ -495,7 +501,7 @@
       }
 
       .text-27 {
-         color: rgb(96 96 96);
+        color: rgb(96 96 96);
         font-family: Roboto, Arial;
         font-size: 13px;
         margin-top: 6px;
@@ -663,7 +669,7 @@
       }
 
       .text-36 {
-         color: rgb(96 96 96);
+        color: rgb(96 96 96);
         font-family: Roboto, Arial;
         font-size: 13px;
         margin-top: 6px;
@@ -803,6 +809,7 @@
       .user {
         height: 40px;
         border-radius: 50px;
+        cursor: pointer;
       }
 
       .side-bar {
@@ -927,7 +934,7 @@
 
       .rel-notifications .abss-notifications {
         position: absolute;
-         background-color: rgb(184, 155, 155);
+        background-color: rgb(184, 155, 155);
         padding: 8px 8px 8px 8px;
         color: white;
         font-family: Roboto; Arial;
